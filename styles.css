@@ -16,11 +16,17 @@ h1{
     color: rgb(0, 35, 75)
 }
 
-.h1-NewsReel{
-    font-size: 2.5em;
-    color: white;
-    margin: .3em;
+h3{
+    margin: .5em;
+    color: rgb(0, 35, 75);
 }
+
+h4{
+    margin: .5em;
+    color: rgb(0, 35, 75)
+}
+
+
 
 /* NAV BAR */
 .navBar {
@@ -36,6 +42,17 @@ h1{
     /* background-color: gainsboro; */
 }
 
+.TitleName {
+    display: grid;
+}
+
+.Title{
+    font-size: 2.5em;
+    color: rgb(0, 35, 75);
+    text-align: center;
+    margin: .8em 0em -.6em 0em;
+}
+
 .navUL {
     margin-top: 2em;
     padding: .15em;
@@ -49,27 +66,22 @@ h1{
     padding: .3em .2em;
     list-style: none; 
     text-align: center;
+    
 } 
 .navLIA {
     text-decoration: none;
     color: black;
     padding: .5em;
     margin: .5em;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    
 }
-
-.Title{
-    font-size: 4em;
-    color: rgb(0, 35, 75);
-    text-align: center;
-}
-
 
 .contentBox {
     display: flex;
     margin: 3em 1em;
-    border-top: 1px double rgb(0, 35, 75);
-    border-bottom: 1px double rgb(0, 35, 75);
+    border-top: 1px solid rgb(0, 35, 75);
+    border-bottom: 1px solid rgb(0, 35, 75);
 }
 
 .contentVerticalTexts{
@@ -82,11 +94,16 @@ h1{
 }
 
 .carousel {  
-    color: white;
     text-align: center;
     padding:2em 2em 5em 2em;
     margin: 0em -.5em;
-    background-color: rgb(0, 35, 75);
+    background-color: white;
+}
+
+.h1-NewsReel{
+    font-size: 2em;
+    color: rgb(0, 35, 75);
+    margin: .3em;
 }
 
 ol.carousel-indicators {
@@ -109,11 +126,28 @@ ol.carousel-indicators {
  }
  
  ol.carousel-indicators li {
-    background: rgba(255,255,255,0.25);
+    background: rgba(0, 35, 75, 0.1);
     margin-left:auto;
     margin-right: auto;
  }
  
  ol.carousel-indicators li.active {
-    background: rgba(255,255,255,1);
+    background: rgb(0, 35, 75);
  }
+
+ .instDate {
+     margin: -.5;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .institutionEntry{
+     display: grid;
+ }
+
+ .verticalBox{
+    display: grid;
+    margin: 3em 1em;
+    border-top: 1px double rgb(0, 35, 75);
+    border-bottom: 1px double rgb(0, 35, 75);
+}
