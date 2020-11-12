@@ -19,6 +19,7 @@ header{
     color: white;
 }
 
+
 h1{
     margin: .5em;
     color: rgb(0, 35, 75)
@@ -39,7 +40,7 @@ h4{
 /* NAV BAR */
 .navBar {
     background: white;
-    margin: .5em -.5em;
+    margin: .5em 8em;
     padding: .5em;
     /* padding-left: 5em; */
     display: flex;
@@ -83,12 +84,16 @@ h4{
     padding: .5em;
     margin: .5em;
     font-size: 1.2em;
-    
+}
+
+.navLIA:hover{
+    text-decoration: none;
+    color: rgb(68, 85, 104);
 }
 
 .contentBox {
     display: flex;
-    margin: 0em 8em;
+    margin: 3em 10em;
     border-top: 1px solid rgb(0, 35, 75);
     border-bottom: 1px solid rgb(0, 35, 75);
 }
@@ -157,7 +162,7 @@ ol.carousel-indicators {
 
  .verticalBox{
     display: grid;
-    margin: 3em 8em;
+    margin: 3em 10em;
     border-top: 1px double rgb(0, 35, 75);
     border-bottom: 1px double rgb(0, 35, 75);
 }
