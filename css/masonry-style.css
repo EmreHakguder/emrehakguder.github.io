@@ -83,7 +83,7 @@ h1 {
   font-size: 1.5em;
 } */
 
-h2 {
+/* h2 {
   font-size: 1.25em;
 }
 
@@ -93,7 +93,7 @@ h3 {
 
 h4 {
   font-size: 1em;
-}
+} */
 
 /**
  * BOX HACKING
@@ -114,10 +114,7 @@ html {
   margin-left: auto;
   padding: 1.5em;
 }
-body {
-  background-color: #ffffff;
-  /* color: #b8b8b8; */
-}
+
 .masonry-wrapper {
   padding: 1.5em;
   max-width: 961px;
