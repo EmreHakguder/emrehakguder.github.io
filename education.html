@@ -12,15 +12,15 @@
     
     <script> 
     $(function(){
-    $("#headerNavReel").load("headerNavReel.html #headerNavReel"); 
+    $("#header").load("headerNavReel.html #header");
+    $("#navBar").load("headerNavReel.html #navBar");  
     });
     </script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- jQuery library -->
+    <link rel="stylesheet" href="css/styles.css"><!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
@@ -29,14 +29,16 @@
 </head>
 
 <body>
-    <div id="headerNavReel"></div>
-    
+    <div id="header"></div>
+    <div id="navBar"></div>
+
     <h1 style =
     "margin: 1em 1em -.75em 1em;
     text-align: center;">
         Education</h1>
 
-    <div class="verticalBox">
+        <div class="topBottomBorders sideMargs2"
+        style="display: grid;">
         <div class="institutionEntry">
             <div class="instDate">
                 <h3> The University of Chicago </h3>

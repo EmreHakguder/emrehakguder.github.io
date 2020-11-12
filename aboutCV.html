@@ -12,14 +12,17 @@
     
     <script> 
     $(function(){
-    $("#headerNavReel").load("headerNavReel.html #headerNavReel"); 
+    $("#header").load("headerNavReel.html #header"); 
+    $("#navBar").load("headerNavReel.html #navBar"); 
+    
     });
     </script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -29,12 +32,15 @@
 </head>
 
 <body>
-    <div id="headerNavReel"></div>
+    <div id="header"></div>
+    <div id="navBar"></div>
+
     <h1 style =
     "margin: 1em 1em -.75em 1em;
     text-align: center;">
         About Emre</h1>
-    <div class="contentBox">
+    <div class="topBottomBorders sideMargs2"
+    style="display: flex;">
         <img style = "margin: 1em;
         box-shadow: .5em .5em .25em #ccc;
         border-radius: 1%;"
