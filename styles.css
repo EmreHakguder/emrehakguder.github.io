@@ -79,7 +79,7 @@ h4{
 
 .contentBox {
     display: flex;
-    margin: 3em 1em;
+    margin: 3em 9.5em;
     border-top: 1px solid rgb(0, 35, 75);
     border-bottom: 1px solid rgb(0, 35, 75);
 }
@@ -147,7 +147,7 @@ ol.carousel-indicators {
 
  .verticalBox{
     display: grid;
-    margin: 3em 1em;
+    margin: 3em 9.5em;
     border-top: 1px double rgb(0, 35, 75);
     border-bottom: 1px double rgb(0, 35, 75);
 }
