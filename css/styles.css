@@ -32,7 +32,8 @@ h4{
 .navBar {
     background: white;
     margin: .5em -.5em;
-    padding: .1em;
+    padding: .5em;
+    /* padding-left: 5em; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -79,7 +80,7 @@ h4{
 
 .contentBox {
     display: flex;
-    margin: 3em 9.5em;
+    margin: 3em 8em;
     border-top: 1px solid rgb(0, 35, 75);
     border-bottom: 1px solid rgb(0, 35, 75);
 }
@@ -147,7 +148,7 @@ ol.carousel-indicators {
 
  .verticalBox{
     display: grid;
-    margin: 3em 9.5em;
+    margin: 3em 8em;
     border-top: 1px double rgb(0, 35, 75);
     border-bottom: 1px double rgb(0, 35, 75);
 }
