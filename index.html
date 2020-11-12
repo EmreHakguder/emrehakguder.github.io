@@ -12,16 +12,18 @@
     </script>
     
     <script> 
-    $(function(){
-    $("#headerNavReel").load("headerNavReel.html #headerNavReel"); 
-    });
-    </script>
-    
+      $(function(){
+      $("#headerNavReel").load("headerNavReel.html #headerNavReel"); 
+      });
+      </script>
+  
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/masonry-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -29,47 +31,89 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
     
-</head>
+  </head>
 
-<body>
-    
+  <body>
+
     <div id="headerNavReel"></div>
+  
+  <!-- <h1 style =
+  "margin: 1em;
+  text-align: center;">
+        Projects</h1> -->
 
-    <div class="topBottomBorders sideMargs2"
-    style="display: flex;">
-        <img style = "margin: 1em;
-        box-shadow: .5em .5em .25em #ccc;
-        border-radius: 1%;"
-        height="600px"
-        src="/assets/img/EH.jpg"
-        alt="Me">
+      <div id = "masonryX" class="masonry-wrapper">
+        <div class="masonry">
 
-        <div class="contentVerticalTexts">
-            <p class = "Texts">
-                I'm a linguist and a graphic designer. <br> <br>
-                I'm a final year Ph.D. student at
-                <a href="https://linguistics.uchicago.edu/"
-                target="_blank">the University of Chicago 
-                Linguistics Department</a>. I study 
-                the typology of sign language grammars
-                and focus on predicting linguistic
-                behavior by identifying and
-                studying the factors that affect
-                language formation. I conduct
-                crosslinguistic projects and use
-                computational and statistical methods
-                to explain syntactic and semantic phenomena.
-                <br><br> I also work on spoken languages
-                SAKHA and
-                TURKISH
-                <br><br>For more information click
-                <a href="aboutCV.html"> About/CV</a>.
-            </p>
-            <p class = "Texts">
-                dafwd
-            </p>
-        </div>
+          <!-- About me card -->
+          <div class="masonry-item">
+            <img src="assets/img/EH.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay overlay-me">
+             <a href="aboutCV.html"><div class="overlayText overlayText-me">About.</div></a>
+            </div>
+          </div>
+
+          <!-- Claira card -->
+          <div class="masonry-item">
+            <img src="assets/img/legal.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">NLP: Classifying legal documents with machine learning.</div></a>
+            </div>
+          </div>
+
+          
+          <!-- ASL VSM card -->
+          <div class="masonry-item">
+            <img src="assets/img/network2.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">American Sign Language<br>Vector Space Model.</div></a>
+            </div>
+          </div>
+
+          <!-- Ford-Kavanaugh card -->
+          <div class="masonry-item">
+            <img src="assets/img/justice2.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">Predicting political stance from language performance.</div></a>
+            </div>
+          </div>
+
+          <!-- Turkish syllabifier card -->
+          <div class="masonry-item">
+            <img src="assets/img/notepad.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">Turkish syllabifier.</div></a>
+            </div>
+          </div>
+        
+          <!-- Embedded questions card -->
+          <div class="masonry-item">
+            <img src="assets/img/questions.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">Embedded questions in Turkish Sign Language.</div></a>
+            </div>
+          </div>
+
+           <!-- Dissertation card -->
+           <div class="masonry-item">
+            <img src="assets/img/tools.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">Instrumentals.</div></a>
+            </div>
+          </div>
+
+          <!-- Command constructions card -->
+          <div class="masonry-item">
+            <img src="assets/img/commands.jpg" alt="Dummy Image" class="masonry-content">
+            <div class="overlay">
+             <a href="#"><div class="overlayText">Command constructions in Turkish Sign Language.</div></a>
+            </div>
+          </div>
+          
+  
     </div>
+    <script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.js"></script>
     
-</body>
+  </body>
 </html>

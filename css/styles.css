@@ -2,6 +2,7 @@
 
 :root{
     --colorDark: rgb(20, 40, 80);
+    --colorPink: #ffbad7;
 }
 
 
@@ -98,7 +99,7 @@ h4{
 
 .navLIA-portfolio {
     text-decoration: none;
-    color: #ffbad7;
+    color:var(--colorPink);
     padding: .5em;
     margin: -.25em;
     font-size: 1em;
@@ -106,7 +107,7 @@ h4{
 
 .navLIA-portfolio:hover {
     text-decoration: none;
-    color: #ffbad7;
+    color:var(--colorPink);
 }
 
 .contactMeBox {
