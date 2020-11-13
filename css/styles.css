@@ -2,12 +2,16 @@
 
 :root{
     --colorDark: rgb(20, 40, 80);
-    --colorFooter: rgb(225, 225, 225);
+    --colorDarkFade0:#f7f9fd;
+    --colorDarkFade1: rgb(202, 209, 224);
+    --colorDarkFade2: rgb(119, 132, 167);
+    --colorDarkFade3: rgb(52, 63, 90);
     --colorPink: #ffbad7;
+    --colorPinkLight: #fffafc;
+    --colorPinkFade1: #e3d0d8;
+    --colorFooter: rgb(225, 225, 225);
 }
 
-body {
-}
 
 html{
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +23,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    padding: 1.25em;
+    padding: 1em;
     display: flex;
     justify-content: flex-end;
     /* position: fixed; */
@@ -36,15 +40,16 @@ footer {
     width: 100%;
     margin-top: 5em;
     background-color: var(--colorFooter);
-    color:rgb(250, 250, 250);
+    color:rgb(253, 253, 253);
     text-align: center;
     padding-top: 1em;
     padding-bottom: .5em;
+    border-top: var(--colorDarkFade1) 1px solid;
 }
 
 .fa {
     margin: .05em .25em .05em .25em;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -76,8 +81,15 @@ h4{
     /* vertical-align: middle; */
 }
 
+.navBoxWrapper {
+    display: flex;
+    /* background: violet; */
+    /* padding: 1em; */
+    /* margin-top: -1em; */
+}
+
 .TitleName {
-    margin: .75em 1em;
+    margin: .5em 1em;
     display: grid;
 }
 
@@ -114,9 +126,10 @@ h4{
 
 .navLIA:hover{
     text-decoration: none;
-    background-color: #fffafc;
+    background-color: var(--colorDarkFade0);
     padding: .7em .5em .7em .5em;
     color: var(--colorDark);
+    opacity: .3;
     
 }
 
@@ -136,9 +149,18 @@ h4{
 .contactMeBox {
     margin: 3em 43em;
     padding: .5em;
-    border-top: 1px double var(--colorDark);
-    border-bottom: 1px double var(--colorDark);
+    /* border-top: 1px double var(--colorDark);
+    border-bottom: 1px double var(--colorDark); */
 }
+
+.contactMeBox:after{
+    content: "" ;
+    display: block;
+    margin: 0em auto;
+    width: 25%;
+    padding-top:.5em;
+    border-bottom: solid 1px black;
+  }
 
 .sideMargs2 {
     margin-right: 12em;
@@ -147,11 +169,21 @@ h4{
 
 .topBottomBorders {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
     padding: .5em;
-    border-top: 1px double var(--colorDark);
-    border-bottom: 1px double var(--colorDark);
+    /* border-top: 1px double var(--colorDark); */
+    /* border-bottom: 1px double var(--colorDark); */
 }
+
+.topBottomBorders:after{
+    content: "" ;
+    display: block;
+    margin: 0em auto;
+    width: 75%;
+    padding-top:5em;
+    border-bottom: solid 1px black;
+  }
+
 
 .contentVerticalTexts{
     display: grid;
@@ -169,10 +201,24 @@ h4{
     background-color: white;
 }
 
+.slide{
+    padding: 0em;
+}
+.slide:after{
+    content: "" ;
+    display: block;
+    margin: 0em auto;
+    width: 20%;
+    padding-top:5em;
+    border-bottom: solid 1px black;
+  }
+
 .h1-NewsReel{
-    font-size: 2em;
+    font-size: 2.1em;
+    font-weight: 150;
     color: var(--colorDark);
-    margin: .3em;
+    margin: 0em;
+    padding: .2em;
 }
 
 ol.carousel-indicators {
@@ -215,10 +261,30 @@ ol.carousel-indicators {
 
 
 .p-in-education {
-    /* color: red; */
     font-size: 1.3em;
     margin-left: .6em;
     font-style: italic;
 }
 
+.aboutMenuItem{
+    margin-top: .75em;
+    padding: .5em;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    
+}
 
+.aboutMenu {
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--colorDark);
+    /* background-color: red; */
+}
+
+.aboutMenuItem:hover {
+    background-color: var(--colorDarkFade0);
+    color: var(--colorDark);
+    opacity: .3;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en";
+scroll-behavior: smooth;>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,41 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
+
+    <!-- SCRIPT FOR SMOOTH SCROLL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
     
     <script> 
     $(function(){
     $("#header").load("headerNavReel.html #header"); 
     $("#navBar").load("headerNavReel.html #navBar"); 
     $("#footer-container").load("footer.html #footer-container"); 
-    
     });
     </script>
 
@@ -37,7 +66,8 @@
     <div id="navBar"></div>
 
     
-    <div class="topBottomBorders sideMargs2"
+    <div class="topBottomBorders sideMargs2">
+    <div
     style="display: flex;">
         <img style = "margin: 1em;
         box-shadow: .5em .5em .25em #ccc;
@@ -48,9 +78,32 @@
         
         <div class="contentVerticalTexts">
 
-            <h1>About Emre</h1>
-    
-            <p class = "Texts">
+            <div style="display: flex;
+            justify-content: space-between;">
+                <h1 style="text-align: left;">About Emre</h1>
+                <div>
+                    <div class="aboutMenu">
+                        <a style = "text-decoration: none;" class = "aboutMenuItem" href="#">CV</a>
+                        <a style = "text-decoration: none;" class = "aboutMenuItem" href="#Experience">EXPERIENCE</a>
+                        <a style = "text-decoration: none;" class = "aboutMenuItem" href="#Skills">SKILLS</a>
+                        <a style = "text-decoration: none;" class = "aboutMenuItem" href="#Education">EDUCATION</a>
+                        <a style = "text-decoration: none;" class = "aboutMenuItem" href="#Interests">INTERESTS</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class = "Texts" style = "text-align: justify;">
+                <!-- For a copy of my CV
+                <a href="#">click here.</a>  <br><br> -->
+                
+                <u><b>REWRITE ALL THIS</b></u><br><br>
+                I'm a linguistics Ph.D. and a multidisciplinary designer.
+                I've worked on many projects as a computational linguist,
+                an interior designer,
+                architectural assistant and visualization artist,
+                <br><br>
+
+                
                 Emre Hakgüder grew up in Bursa, Turkey.
                 During his college education at Bahçesehir
                 University in Istanbul, where he studied
@@ -69,19 +122,59 @@
                 wrote his master's thesis on its snytax. In 2015,
                 he started his doctoral studies at the University
                 of Chicago Linguistics Program. He currently resides
-                in West Loop, Chicago. <br> <br> For a copy of his CV
-                <a href="#">click here.</a>                
+                in West Loop, Chicago. <br>             
             </p>
-            <h1 style = "text-align: end;">Personal Interests</h1>
-            <p class="Texts">
+            
+
+        </div>
+    </div>
+</div>
+    <div id = "Experience" class="topBottomBorders sideMargs2">
+        <h1 style = "text-align: center;">Experience</h1>
+        <p class="Texts">
                 Emre is an avid cook and baker. He loves to create
                 his own recipes and he experiments with
                 protein-rich ingredients. He rides his bike
                 everywhere he goes. He 
                 Portrait photography; interior design; plants
-            </p>
-        </div>
+        </p>
     </div>
+
+    <div id = "Skills" class="topBottomBorders sideMargs2">
+        <h1 style = "text-align: center;">Skills</h1>
+        <p class="Texts">
+                Emre is an avid cook and baker. He loves to create
+                his own recipes and he experiments with
+                protein-rich ingredients. He rides his bike
+                everywhere he goes. He 
+                Portrait photography; interior design; plants
+        </p>
+    </div>
+
+    <div id = "Education" class="topBottomBorders sideMargs2">
+        <h1 style = "text-align: center;">Education</h1>
+        <p class="Texts">
+                Emre is an avid cook and baker. He loves to create
+                his own recipes and he experiments with
+                protein-rich ingredients. He rides his bike
+                everywhere he goes. He 
+                Portrait photography; interior design; plants
+        </p>
+    </div>
+
+    <div id = "Interests" class="topBottomBorders sideMargs2">
+        <h1 style = "text-align: Right;">Personal Interests</h1>
+        <p class="Texts">
+                Emre is an avid cook and baker. He loves to create
+                his own recipes and he experiments with
+                protein-rich ingredients. He rides his bike
+                everywhere he goes. He 
+                Portrait photography; interior design; plants
+        </p>
+    </div>
+
+
+
 
     <div id="footer-container"></div>
     

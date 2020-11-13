@@ -5,6 +5,7 @@
   --colorDarkFade3: rgb(52, 63, 90);
   --colorPink: #ffbad7;
   --colorPinkFade1: #e3d0d8;
+  --colorFooter: rgb(225, 225, 225);
 }
 
 article, aside, details, figcaption, figure,
@@ -12,10 +13,6 @@ footer, header, hgroup, main, menu, nav, section {
   display: block;
 }
 
-/* body {
-  line-height: 1.618;
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 ol, ul {
   list-style: none;
@@ -44,9 +41,6 @@ code, pre, samp {
   font-family: monospace;
 }
 
-/**
- * BASIC TYPE
- */
 
 img, video {
   max-width: 100%;
@@ -57,30 +51,6 @@ p:not(:last-child) {
   margin: 0 0 1em;
 }
 
-/* h1, h2, h3, h4 {
-  margin: .5em 0 .75em;
-  line-height: 1.3;
-}
-
-h1 {
-  font-size: 1.5em;
-} */
-
-/* h2 {
-  font-size: 1.25em;
-}
-
-h3 {
-  font-size: 1.125em;
-}
-
-h4 {
-  font-size: 1em;
-} */
-
-/**
- * BOX HACKING
- */
 
 html {
   box-sizing: border-box;
@@ -100,28 +70,39 @@ html {
 
 .masonry-wrapper {
   padding: 1.5em;
-  max-width: 961px;
+  max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10em;
+  /* border-top: var(--colorDark) solid 1px; */
 }
+
+.masonry-wrapper:after{
+  content: "" ;
+  display: block;
+  margin: 0em auto;
+  width: 75%;
+  padding-top:5em;
+  border-bottom: solid 1px black;
+}
+
 .masonry {
   display: grid;
-  grid-template-columns: repeat(1, minmax(100px,1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, minmax(100px,1fr));
+  grid-gap: 11px;
   grid-auto-rows: 0;
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .masonry {
-    grid-template-columns: repeat(2, minmax(100px,1fr));
+    grid-template-columns: repeat(3, minmax(100px,1fr));
   }
 }
 @media only screen and (min-width: 1024px) {
   .masonry {
-    grid-template-columns: repeat(3, minmax(100px,1fr));
+    grid-template-columns: repeat(4, minmax(100px,1fr));
   }
 }
-.masonry-item {
+.masonry-item, .masonry-content {
   border-radius: 10px;
   overflow: hidden;
 }
@@ -132,10 +113,6 @@ html {
   transition: filter .25s ease-in-out;
 }
 
-.masonry-item:hover .overlay {
-  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, .3));
-  opacity: .98;
-}
 
 .overlay {
   position: absolute;
@@ -154,6 +131,15 @@ html {
   background-color:var(--colorPink);
 }
 
+.overlayDesign{
+  background-color:var(--colorPink);
+}
+
+.masonry-item:hover .overlay {
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, .3));
+  opacity: .98;
+}
+
 .overlayText {
   color: white;
   font-size: 1.1em;
@@ -161,14 +147,12 @@ html {
   width: 90%;
   padding-top: 100%;
   padding-bottom: 100%;
-  /* background-color: red; */
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  align-items: ;
 }
 
 .overlayText-me {
@@ -201,8 +185,4 @@ html {
 .design {
   color: whitesmoke;
   background-color: var(--colorPinkFade1);
-}
-
-.overlayDesign{
-  background-color:var(--colorPink);
 }
