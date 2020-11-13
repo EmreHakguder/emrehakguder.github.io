@@ -202,3 +202,7 @@ html {
   color: whitesmoke;
   background-color: var(--colorPinkFade1);
 }
+
+.overlayDesign{
+  background-color:var(--colorPink);
+}
