@@ -351,6 +351,7 @@ ol.carousel-indicators {
     }
 
     .aboutMeTitle{
+        text-align: center;
         display: none;
     }
 }
