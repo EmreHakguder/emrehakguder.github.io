@@ -81,6 +81,7 @@ h4{
     /* vertical-align: middle; */
 }
 
+
 .navBoxWrapper {
     display: flex;
     /* background: violet; */
@@ -91,6 +92,7 @@ h4{
 .TitleName {
     margin: .5em 1em;
     display: grid;
+    justify-content: center;
 }
 
 .Title{
@@ -187,6 +189,10 @@ h4{
 
 .contentVerticalTexts{
     display: grid;
+}
+
+.photoMenuText {
+    display: flex;
 }
 
 .Texts {
@@ -287,4 +293,11 @@ ol.carousel-indicators {
     background-color: var(--colorDarkFade0);
     color: var(--colorDark);
     opacity: .3;
+}
+
+
+@media only screen and (max-width: 828px){
+    .navBar {display: grid;}
+    .photoMenuText {display: grid;
+    justify-content: center;}
 }
