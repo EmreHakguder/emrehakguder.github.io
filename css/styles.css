@@ -149,7 +149,7 @@ h4{
 }
 
 .contactMeBox {
-    margin: 3em 43em;
+    margin: 3em 8em;
     padding: .5em;
     /* border-top: 1px double var(--colorDark);
     border-bottom: 1px double var(--colorDark); */
@@ -186,6 +186,12 @@ h4{
     border-bottom: solid 1px black;
   }
 
+.myPicture {
+    margin: 1em;
+    box-shadow: .5em .5em .25em #ccc;
+    border-radius: 1%;
+    height: 600px;
+}
 
 .contentVerticalTexts{
     display: grid;
@@ -193,6 +199,7 @@ h4{
 
 .photoMenuText {
     display: flex;
+    justify-content: center;
 }
 
 .Texts {
@@ -208,6 +215,7 @@ h4{
 }
 
 .slide{
+    margin-top: 2.5em;
     padding: 0em;
 }
 .slide:after{
@@ -272,6 +280,12 @@ ol.carousel-indicators {
     font-style: italic;
 }
 
+.aboutMeTitle {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
 .aboutMenuItem{
     margin-top: .75em;
     padding: .5em;
@@ -296,8 +310,47 @@ ol.carousel-indicators {
 }
 
 
-@media only screen and (max-width: 828px){
+
+
+@media only screen and (max-width: 1293px){
     .navBar {display: grid;}
+    
+    .myPicture{
+        height: 450px;
+    }
+
+    .photoMenuText {display: grid;
+        justify-content: center;}
+
+}
+
+@media only screen and (max-width: 828px){
+    
+
     .photoMenuText {display: grid;
     justify-content: center;}
+
+    .myPicture{
+        height: 400px;
+
+    }
+
+    .fa{
+        font-size: 3em;
+    }
+
+    .navBar {
+        margin-bottom: -3em;
+    }
+    .navLIA {
+        font-size: 1.25em;
+    }
+
+    .navLIA-portfolio{
+        font-size: 1.25em;
+    }
+
+    .aboutMeTitle{
+        display: none;
+    }
 }
